@@ -1,0 +1,28 @@
+{
+  "paracetamol": {
+    "interacts_with": []
+  },
+  "ibuprofen": {
+    "interacts_with": [
+      { "drug": "aspirin", "severity": "severe" },
+      { "drug": "lithium", "severity": "moderate" }
+    ]
+  },
+  "aspirin": {
+    "interacts_with": [
+      { "drug": "ibuprofen", "severity": "severe" },
+      { "drug": "warfarin", "severity": "severe" }
+    ]
+  },
+  "lithium": {
+    "interacts_with": [
+      { "drug": "ibuprofen", "severity": "moderate" }
+    ]
+  },
+  "warfarin": {
+    "interacts_with": [
+      { "drug": "aspirin", "severity": "severe" },
+      { "drug": "paracetamol", "severity": "moderate" }
+    ]
+  }
+}
